@@ -54,12 +54,12 @@ function Index() {
 function Nav() {
   return (
     <nav className="fixed inset-x-0 top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="/" className="font-serif text-2xl font-medium tracking-tight">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 md:px-6">
+        <a href="/" className="font-serif text-xl font-medium tracking-tight md:text-2xl">
           {siteConfig.name}
         </a>
 
-        <div className="hidden items-center gap-6 text-sm font-medium md:flex">
+        <div className="flex items-center gap-3 text-xs font-medium md:gap-6 md:text-sm">
           <a
             href="#why"
             className="text-muted-foreground transition-colors hover:text-foreground"
@@ -68,7 +68,7 @@ function Nav() {
           </a>
           <a
             href="#process"
-            className="text-muted-foreground transition-colors hover:text-foreground"
+            className="hidden text-muted-foreground transition-colors hover:text-foreground sm:inline"
           >
             How it works
           </a>
@@ -80,7 +80,7 @@ function Nav() {
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-2 text-primary-foreground transition-colors hover:bg-primary/90"
+            className="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-2 text-primary-foreground transition-colors hover:bg-primary/90 md:px-4"
           >
             Start writing
           </a>
@@ -89,6 +89,7 @@ function Nav() {
     </nav>
   );
 }
+
 
 function Hero() {
   return (
